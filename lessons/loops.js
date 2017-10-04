@@ -1,3 +1,5 @@
+//authored by Carolina Restrepo
+
 // var num = 0
 // while (num <= 10) {
 //   console.log('the number is: ' + num)
@@ -78,9 +80,8 @@
 //         return 'F'
 //     }
 // }
-
-
 // Q6
+
 // for (var i = 60; i <= 100; i += 1) {
 //     console.log(i, assignGrade(i))
 // }
