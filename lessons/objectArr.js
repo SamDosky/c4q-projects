@@ -3,7 +3,7 @@
 //     name: 'Mole',
 //     servings: 2,
 //     ingredients: ['cinnamon','cumin','cocoa']
-     
+
 // };
 
 // function listItems(recipe) {
@@ -17,7 +17,7 @@
 
 
 
-
+//authored by Carolina Restrepo
 
 
 
@@ -26,7 +26,7 @@
 //     name: 'Mole',
 //     servings: 2,
 //     ingredients: ['cinnamon','cumin','cocoa']
-     
+
 // };
 
 // function listItems(list) {
@@ -57,7 +57,7 @@
 // }
 
 //   console.log(getProps(cat))
-  // will return ['family', 'genus', 'species']
+// will return ['family', 'genus', 'species']
 
 
 
@@ -82,9 +82,9 @@ of properties the object has.
 //     } 
 //    return counter
 // }
-  
+
 // console.log(getObjLength(cat))
-  // will return 3
+// will return 3
 
 
 
@@ -183,19 +183,19 @@ var arrToDo = [];
 // create an object to push onto the array
 
 function addToDo(arr, description, completed) {
-    var todo = 
-    {
-        description: description,
-        completed: completed
-    };
+    var todo =
+        {
+            description: description,
+            completed: completed
+        };
     arr.push(todo)
-    return arr 
+    return arr
 
 }
 
 
-addToDo(arrToDo,'study for exam', false )
-addToDo(arrToDo,'fire the maid',true)
+addToDo(arrToDo, 'study for exam', false)
+addToDo(arrToDo, 'fire the maid', true)
 console.log(arrToDo)
 
 
