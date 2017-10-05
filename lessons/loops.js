@@ -1,5 +1,3 @@
-//authored by Carolina Restrepo
-
 // var num = 0
 // while (num <= 10) {
 //   console.log('the number is: ' + num)
@@ -163,24 +161,29 @@
 
 
 
-function bottles(){
+// function bottles(){
     
-    for (var i = 99; i >= 2; i -= 1) {
+//     for (var i = 99; i >= 2; i -= 1) {
     
-        if (i === 1) {
+//         if (i === 1) {
             
-            console.log(i + " bottle of beer on the wall,\n"  
-                        + (i - 1) + " bottle of beer.\n Take one down, pass it around,\n no more bottle of beer on the wall.")
+//             console.log(i + " bottle of beer on the wall,\n"  
+//                         + (i - 1) + " bottle of beer.\n Take one down, pass it around,\n no more bottle of beer on the wall.")
         
-        } else {
+//         } else {
             
-            console.log(i + " bottles of beer on the wall,\n"  
-                        + i + " bottles of beer.\n Take one down, pass it around,\n" 
-                        + (i - 1) + " bottles of beer on the wall.")   
-            }
+//             console.log(i + " bottles of beer on the wall,\n"  
+//                         + i + " bottles of beer.\n Take one down, pass it around,\n" 
+//                         + (i - 1) + " bottles of beer on the wall.")   
+//             }
     
-    }
-}
+//     }
+// }
     
-bottles()
+// bottles()
+
+
+
+
+//just some changes for change sake
 	

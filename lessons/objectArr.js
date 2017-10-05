@@ -16,11 +16,6 @@
 // listItems(favRecipe)
 
 
-
-//authored by Carolina Restrepo
-
-
-
 //Q2
 // var favRecipe = {
 //     name: 'Mole',
