@@ -19,11 +19,11 @@
 // }
 // }
 
-// console.log(XO("zpzpzzpzpp"))// the comp didnt find the x's or o's so it is the same amount
+// console.log(XO("zpzpzzpzp"))// the comp didnt find the x's or o's so it is the same amount
 
 
 // Q2
-// countVowels.includes()
+//countVowels.includes()
 
 // function countVowels(vowels) {
 //     vowels = "a","e", "i", "o", "u";
@@ -81,22 +81,22 @@
 
 
 
-var list;
-var num = 7;
+// var list;
+// var num = 7;
 
-function joinList(n) {
-    str = ''
-    for (var j = n; j >= 1; j--){
-            str += j; // could put if(j<n){.. str+=','}.. str+=j
-            str += ", "
-        if(j === 1) {
-            str += "BLAST OFF! "
-        }
-    }
-return str;
-}
+// function joinList(n) {
+//     str = ''
+//     for (var j = n; j >= 1; j--){
+//             str += j; // could put if(j<n){.. str+=','}.. str+=j
+//             str += ", "
+//         if(j === 1) {
+//             str += "BLAST OFF! "
+//         }
+//     }
+// return str;
+// }
 
-console.log(joinList(8))
+// console.log(joinList(8))
 // for (var i = 1; i <= num; i += 3) {
 //     list = joinList(i);
 //     console.log(i + ' ' + list);

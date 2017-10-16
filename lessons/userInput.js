@@ -43,9 +43,12 @@
 
 
 
+//---------------------------------------------
+//              EXERCISES I
+//---------------------------------------------
+//  Q1 [DONE]
 
-// //Q1
-
+// variables
 // var readline = require('readline')
 
 // var rl = readline.createInterface({
@@ -53,72 +56,32 @@
 //     output: process.stdout
 // })
 
+// // functions
 // function clear() {
 //     process.stdout.write('\u001B[2J\u001B[0;0f')
 // }
 
-
-// var sum = 0;
 // var count = 0; 
-// var str = ''
+// var str = 'Total lines: '
+
+// //readline
 // rl.on('line', function (input) {
-//     clear()
-//     str += input;
-//     str += '\n';
+//     var newInput = input
 //     count = count + 1;
-//     sum += count
-
-//     console.log(count)
-
+//     console.log(str + count)
 // } )
-
 // console.log("insert an input")
 
 
+//------------------------------------------------
+//  Q2 [DONE]
 
-
-
-
-// var readline = require('readline')
-
-//   var rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-//   })
-
-//   var counter = 0 
-//   rl.on('line', function(input) {
-//         var newInput = input.toLowerCase()
-//         if (newInput === "inc"){ 
-//         counter++
-//         } else if ( newInput === "dec"){
-//         counter -=1
-//         } else if( newInput === "res"){
-//              counter = 0 
-//         }
-//     console.log(counter)
-//   })
-
-//   console.log("insert an input")
-
-
-
-
-
-
-
-
-
-
-
-//Q2 didn't read the question correctly, reread
 /*
 Write a program that reads the user input one line at a time. 
 After each input the program will log the sum of all numbers 
-that the user had input. If the input is not a number the program 
-will ignore it.
+that the user had input. If the input is not a number the 
+program will ignore it.
 */
-
 
 // var readline = require('readline')
 
@@ -131,50 +94,144 @@ will ignore it.
 //     process.stdout.write('\u001B[2J\u001B[0;0f')
 // }
 
-
-// var sum = 0;
-// var count = 0; 
 // rl.on('line', function (input) {
-//     clear()
-//     var num = Number(input);
-//     num += '\n';
+//     clear();
+//     var sum = 0;
+//     var inputArr = input.split(' ');
+//     for (var i = 0; i < inputArr.length; i++) {
+//         inputArr[i] = Number(inputArr[i]);
+//         if (isNaN(inputArr[i])) {
+//             return;
+//         } else if (typeof inputArr[i] === 'number') {
+//             inputArr[i];
+//         }
+//         sum += inputArr[i]
+//     }
 
-// for ( var count = 0; count < num; count++){
+//     console.log(sum);
+//     console.log("insert an input");
+//     input += '\n';
 
-// }
-//     count = count + num;
-
-//     console.log(count)
-
-// } )
-
-// console.log("insert an input")
+// });
+// console.log("insert an input");
 
 
 
-//EXERCISE 2
-//Q1
+
+
+//--------------------------------------------
+//  Q3   [DONE]
+
 // var readline = require('readline')
 
-//   var rl = readline.createInterface({
+// var rl = readline.createInterface({
 //     input: process.stdin,
 //     output: process.stdout
-//   })
+// })
 
-//   var counter = 0 
-//   rl.on('line', function(input) {
-//         var newInput = input.toLowerCase()
-//         if (newInput === "inc"){ 
-//         counter++
-//         } else if ( newInput === "dec"){
-//         counter -=1
-//         } else if( newInput === "res"){
-//              counter = 0 
+// function clear() {
+//     process.stdout.write('\u001B[2J\u001B[0;0f')
+// }
+
+// rl.on('line', function (input) {
+//     clear();
+//     var sum = 0;
+//     var inputArr = input.split(' ');
+//     for (var i = 0; i < inputArr.length; i++) {
+//         inputArr[i] = Number(inputArr[i]);
+//         inputArr[i] = inputArr[i] || 0; //truthy value vs falsy value
+//         if (typeof inputArr[i] === 'number') {
+//             inputArr[i];
 //         }
-//     console.log(counter)
-//   })
+//         sum += inputArr[i];
+//     }
 
-//   console.log("insert 'inc', 'dec', 'res'")
+//     console.log(sum);
+//     console.log("insert an input");
+//     input += '\n';
+
+// });
+// console.log("insert an input");
+
+
+
+
+
+
+//------------------------------------------------
+
+// draft
+// // variables
+// var readline = require('readline')
+
+// var rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// })
+
+// //functions
+// function clear () {
+//   process.stdout.write('\u001B[2J\u001B[0;0f')
+// }
+
+// function sumStringArr(arr){
+//   var sum = 0;
+//   for (var i = 0; i < arr.length; i++){
+//     var num = Number(arr[i])
+
+//     if (!isNaN(num)){
+//       sum += num;
+//     }
+//   }
+//   return sum;
+// }
+
+// // readline, user input
+// rl.on('line', function(input){
+//     var inputArr = input.split(' ')
+//     var sum = sumStringArr(inputArr)
+//     console.log(sum)
+// })
+
+
+
+
+
+
+
+//---------------------------------------------
+//                EXERCISE II
+//---------------------------------------------
+
+//Q1 [DONE]
+// var readline = require('readline')
+
+// var rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// })
+
+// function clear() {
+//     process.stdout.write('\u001B[2J\u001B[0;0f')
+// }
+
+// var counter = 0
+
+// rl.on('line', function (input) {
+//     clear()
+//     var newInput = input.toLowerCase()
+//     if (newInput === "inc") {
+//         counter++
+//     } else if (newInput === "dec") {
+//         counter -= 1
+//     } else if (newInput === "res") {
+//         counter = 0
+//     }
+//     console.log("insert 'inc', 'dec', 'res'")
+//     console.log(counter)
+// })
+
+// console.log("insert 'inc', 'dec', 'res'")
 
 
 
@@ -185,47 +242,47 @@ will ignore it.
 
 //Q2
 
-var readline = require('readline')
+// var readline = require('readline')
 
-var rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+// var rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// })
 
-function clear() {
-    process.stdout.write('\u001B[2J\u001B[0;0f')
-}
+// function clear() {
+//     process.stdout.write('\u001B[2J\u001B[0;0f')
+// }
 
-rl.on('line', function (input) {
-    clear()
-    var inputArr = input.split(' ');
-    var result = 0;
-    var num1 = Number(inputArr[1]);
-    var num2 = Number(inputArr[2]);
+// rl.on('line', function (input) {
+//     clear()
+//     var inputArr = input.split(' ');
+//     var result = 0;
+//     var num1 = Number(inputArr[1]);
+//     var num2 = Number(inputArr[2]);
 
-    if (isNaN(num1) || isNaN(num2)) {
-        console.log("invalid");
-    } else {
+//     if (isNaN(num1) || isNaN(num2)) {
+//         console.log("invalid");
+//     } else {
 
-        if (inputArr[0] === "+") {
-            result = num1 + num2;
-            console.log(result)
-        } else if (inputArr[0] === "-") {
-            result = num1 - num2;
-            console.log(result)
-        } else if (inputArr[0] === "*") {
-            result = num1 * num2;
-            console.log(result)
-        } else if (inputArr[0] === "/") {
-            result = num1 / num2;
-            console.log(result)
-        }
-    }
+//         if (inputArr[0] === "+") {
+//             result = num1 + num2;
+//             console.log(result)
+//         } else if (inputArr[0] === "-") {
+//             result = num1 - num2;
+//             console.log(result)
+//         } else if (inputArr[0] === "*") {
+//             result = num1 * num2;
+//             console.log(result)
+//         } else if (inputArr[0] === "/") {
+//             result = num1 / num2;
+//             console.log(result)
+//         }
+//     }
 
-    console.log("insert input")
+//     console.log("insert input")
 
-})
-console.log("insert input")
+// })
+// console.log("insert input")
 
 
 
@@ -293,3 +350,61 @@ console.log("insert input")
 //     '/': function(a, b) { return a / b },
 //     '**' function(a, b) { return Math.pow(a, b)}
 // }
+
+
+
+
+
+
+// incline decline
+// var readline = require('readline')
+
+//   var rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+//   })
+
+//   var counter = 0 
+//   rl.on('line', function(input) {
+//         var newInput = input.toLowerCase()
+//         if (newInput === "inc"){ 
+//         counter++
+//         } else if ( newInput === "dec"){
+//         counter -=1
+//         } else if( newInput === "res"){
+//              counter = 0 
+//         }
+//     console.log(counter)
+//   })
+
+//   console.log("insert an input")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// exercise 1 #2 
+// var sum = 0;
+// rl.on('line', function (input) {
+//     clear()
+//     var newInput = input.split(' ');
+//     Number(newInput);
+//     for (var i = 0; i <= newInput.length; i++) {
+//         if (typeof newInput[i] === 'number') {
+//             return sum += newInput[i]; 
+//         }
+//     }
+//     console.log(sum)
+//     input += '\n';
+// })
+
+// console.log("insert an input")

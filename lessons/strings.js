@@ -217,6 +217,7 @@
 // console.log(capitalLast("Jimmy"))
 
 
+
 // mix it Up exercise
 //add the .slice() method
 // function mixUp(str1, str2) {
