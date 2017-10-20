@@ -1,0 +1,118 @@
+body, html {
+    background-color: #f6f6f6;
+}
+
+#painting {
+    background-color: #fff4db;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 0px #8d8d8d;
+}
+
+/* rows */
+#toprow {
+    height: 290px;
+}
+
+#middlerow {
+    height: 10px;
+}
+
+#bottomrow {
+    height: 100px;
+}
+
+/* columns */
+#topleftcolumn{
+    width: 100px;
+    height: 140px;   
+}
+
+#bottomrightcolumn {
+    width: 20px;
+    height: 100px;
+}
+
+
+/* boxes */
+#bigbox { 
+    width: 290px;
+    height: 290px;
+}
+
+#mediumbox {
+    width: 100px;
+    height: 140px;
+}
+#smallbox {
+    width: 100px;
+    height: 100px;
+}
+
+#longbox {
+    width: 260px;
+    height: 100px;
+}
+
+#tinybox {
+    width: 20px;
+    height: 45px;
+}
+
+/* dividers */
+#divider1 { 
+    width: 10px;
+    height: 290px; 
+}
+
+#divider2 {
+    width: 100px;
+    height: 10px;
+}
+
+#divider3 {
+    width:  10px;
+    height: 100px;
+}
+
+#divider4 {
+    width: 20px;
+    height: 10px;
+}
+
+/* position */
+.right { 
+    float: right; 
+}
+
+/* colors */
+.red {
+    background-color: #cc3333;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+
+.lime {
+    background-color: greenyellow;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.purple {
+    background-color: mediumslateblue
+}
