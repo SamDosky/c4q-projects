@@ -23,7 +23,7 @@
 html {
     font-size: 10px;
     margin: 0;
-    font-family: 'bellotaregular', 'quicksandregular', sans-serif;
+    font-family: 'bellotaregular';
   }
   
 body {
@@ -40,10 +40,12 @@ h1 {
   
 h2 {
     font-size: 2.4rem;
+    
   }
   
 p {
     font-size: 1.4rem;
     line-height: 1.6;
     word-spacing: 0.6rem;
+    font-family: 'quicksandregular', sans-serif;
   }
