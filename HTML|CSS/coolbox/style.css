@@ -1,0 +1,27 @@
+html {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+/* Your CSS below here */
+
+.coolbox {
+  width: 12em; /*close to 200px*/
+  height: 4.7em;
+  line-height: 4.7em; 
+  text-align: center;
+  font-size: 1.8rem;   /*18px*/
+  color: #ff0000;
+  background-color: #ff0000;
+  text-shadow: 1px 1px 4px black; /*one px down, one px right, and blur it out with 4px*/
+  border-radius: 0.55em;
+  border: 1px solid #dd0000;
+  background-image: linear-gradient(
+                    to left top, 
+                    rgba(0,0,0,0), 
+                    rgba(0,0,0,0.2) 30%, 
+                    rgba(0,0,0,0.2));
+  box-shadow: .333em .333em .333em gray, 
+              inset 0.1em 0.1em 0.1em white,
+              inset -0.1em -0.1em 0.1em grey;
+  }
