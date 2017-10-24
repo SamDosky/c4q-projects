@@ -1,0 +1,36 @@
+body {
+    font-size: 20px;
+}
+
+input[type="text"] {        /* this is important */
+    line-height: 2em;
+    display:block;
+    margin: 1em 0;
+    padding-left: 2.4em;
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #ccd;
+    background-repeat: no-repeat;
+    background-position: .5em .35em;
+}
+
+input[type="text"]:hover, input[type="text"]:focus {
+    background-color: #fff;
+    border-color: lightblue;
+}
+
+#email {
+    background-image: url('images/email.png');
+}
+
+#twitter {
+    background-image: url('images/twitter.png');
+}
+
+#web {
+    background-image: url('images/web.png');
+}
+
+input[type="submit"] {
+    background-color: orange;
+}
