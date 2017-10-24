@@ -1,6 +1,5 @@
 a[href^="http://"] {              /* write this fully so you won't mess it up [href^="http://"]*/
     color: blue;
-
 }
 
 a[href^="https://"] {
