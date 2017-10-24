@@ -1,0 +1,40 @@
+/* specificity is very important 
+LVHA ("love hate"): Link, Visited, Hover, Active. should be in this order */
+
+a, a:link {
+    color: blue;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover, a:active {
+    color:green;
+    font-weight: bold;
+}
+
+
+/*
+p element is the first child, then it selects the first line; 
+this is selecting a part of an element
+
+nth-child()::first-line
+
+*/
+
+p:first-of-type::first-line {   
+    text-transform: uppercase;
+}
+
+p:nth-of-type(2)::first-line {
+    background-color:pink;
+}
+
+img {
+    border: 25px solid rgba(0,0,0,0)
+}
+
+img:hover {
+    border: 25px solid orange;
+}
