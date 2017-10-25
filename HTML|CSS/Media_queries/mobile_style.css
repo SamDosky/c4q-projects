@@ -7,6 +7,7 @@ the page with a width of 30em.
 */
 
 /* General Setup */
+
 html {
     text-align: auto;
 }
@@ -15,16 +16,12 @@ body {
     font-size: 24px;
     width: 40em;
 }
+
 @media (max-width: 961px) {
     body {
-        font-size: 12px;
-        width: 30em;
-        
+        width: 30em;  
     }
 }
-
-
-
 
 /* links */
 

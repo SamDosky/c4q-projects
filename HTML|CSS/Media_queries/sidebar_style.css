@@ -28,6 +28,7 @@ nav ol {
 
 nav li {
     padding: 1em;
+    display: outline;
 }
 
 /* Links */
