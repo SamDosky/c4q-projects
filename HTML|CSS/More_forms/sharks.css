@@ -17,5 +17,7 @@ textarea:focus {
 
 fieldset {
     display: block;
+    width: 10em;
+    height: 10em;
     }
 
