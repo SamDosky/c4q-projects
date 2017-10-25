@@ -1,0 +1,21 @@
+div {
+    margin: 10px;
+    }
+    
+div>input{
+    margin-bottom: 1em;
+    }
+
+ol {
+    padding: 2em;
+    padding-top: 0;
+    }
+
+textarea:focus {
+    background-color: yellow;
+    }
+
+fieldset {
+    display: block;
+    }
+

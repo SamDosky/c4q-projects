@@ -1,0 +1,29 @@
+div {
+    margin: 10px;
+    padding-bottom: 10px;
+    width: 260px;
+    }
+
+form div:first-of-type {
+    padding-top: 10px;
+    }
+
+.title {
+    float: left;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    }
+
+.submit {
+    padding-left: 9em;
+    display: none;
+    }
+
+input:focus {
+    background-color: yellow;
+    }
+
+input:valid {
+   border: 2px solid green; 
+    }
