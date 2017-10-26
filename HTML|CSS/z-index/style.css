@@ -1,0 +1,49 @@
+/* body */
+
+body {
+    background-color: blue;
+}
+
+/* images */
+img {
+    position: absolute;
+    display: block;
+}
+
+/* specific images */
+#red1 {
+    width: 5%;
+    margin: 47.5%;
+    opacity: 0.5;
+}
+
+#black1 {
+    width: 15%;
+    margin: 42.5%;
+    z-index: -1;
+}
+
+#green1 {
+    width: 30%;
+    margin: 35%;
+    z-index: -2;
+}
+
+#black2 {
+    width: 50%;
+    margin: 25%;
+    z-index: -3;
+}
+
+#red2 {
+    width: 60%;
+    margin: 20%;
+    z-index: -4; 
+    opacity: 0.5; 
+}
+
+#black3 {
+    width: 65%;
+    margin: 17.5%;
+    z-index: -5;
+}
