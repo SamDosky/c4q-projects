@@ -7,43 +7,41 @@ body {
 /* images */
 img {
     position: absolute;
-    display: block;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
 }
 
 /* specific images */
 #red1 {
-    width: 5%;
-    margin: 47.5%;
+    width: 50px;
     opacity: 0.5;
 }
 
 #black1 {
-    width: 15%;
-    margin: 42.5%;
+    width: 200px;;
     z-index: -1;
 }
 
 #green1 {
-    width: 30%;
-    margin: 35%;
+    width: 300px;
     z-index: -2;
 }
 
 #black2 {
-    width: 50%;
-    margin: 25%;
+    width: 400px;
     z-index: -3;
 }
 
 #red2 {
-    width: 60%;
-    margin: 20%;
+    width: 550px;
     z-index: -4; 
-    color: rgba (0,0,0,0.5)
+    opacity: 0.5;
 }
 
 #black3 {
-    width: 65%;
-    margin: 17.5%;
+    width: 600px;
     z-index: -5;
 }
