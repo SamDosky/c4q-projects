@@ -10,9 +10,10 @@ h1 {
     padding: 30px;
 }
 
+
 /* Leftside navigation bar */
 nav {
-    background-color: rgb(234, 255, 221);
+    background-color: rgb(141, 206, 212);
     position: absolute;
     text-align: center;
     height: 100%;
@@ -27,7 +28,8 @@ nav ol {
 }
 
 nav li {
-    padding: 1em;display: outline;
+    padding: 1em;
+    display: outline;
 }
 
 /* Links */
@@ -37,10 +39,7 @@ a {
     padding: .5em; /* add padding to the original inorder for content not to move when you hover over it*/
 }
 
-a:link {
-    color: #000;
-}
-
+a:link, 
 a:visited {
     color: #000;
 }
@@ -50,20 +49,55 @@ a:hover {
     padding: .5em;
 }
 
-/* .invisibleborder {
-    padding: 1px solid rgba(0,0,0,0);
-} 
-no need for invisible border here since the padding adjusted it above
-*/
 
 /* Body Content */
 
-.aligninfo {
-    margin: 0 10% 0 25%;
+div.content {
+ width: 72%;
+ position: absolute;
+ right: 0;
+ margin: 2em;
+}
+
+ol li {
+    padding-bottom: 1em;
+}
+
+/* Image */
+
+img {
+    width: 40%
+}
+
+
+/* Media queries - best to use media queries on the bottom */
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        height:10%;
+        width: 100%;
+    }
+    
+    nav li {
+        display: inline;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    div.content {
+        width: 100%;
+        top: 7em;
+    }
 }
 
 @media print {
-    .leftsidenav {
+    nav {
         display: none;
+    }
+    div.content {
+        width: 100%;
     }
 }
