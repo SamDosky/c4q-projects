@@ -1,6 +1,6 @@
 /* General setup */
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 
 h1 {
@@ -20,6 +20,7 @@ nav {
     width: 20%;
     padding-top: 30px;   
     box-shadow: 0 0 5px #ccc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 nav ol {
@@ -57,7 +58,9 @@ div.content {
  position: absolute;
  right: 0;
  margin: 2em;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+
 
 ol li {
     padding-bottom: 1em;
@@ -84,11 +87,11 @@ img {
     }
 
     nav img {
-        display: none;
+        width: 5%;
     }
 
     div.content {
-        width: 100%;
+        width: auto;
         top: 7em;
     }
 }
