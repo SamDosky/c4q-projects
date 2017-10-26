@@ -23,9 +23,11 @@ nth-child()::first-line
 
 */
 
+/* 
+brower issue
 p:first-of-type::first-line {   
     text-transform: uppercase;
-}
+} */
 
 p:nth-of-type(2)::first-line {
     background-color:pink;
