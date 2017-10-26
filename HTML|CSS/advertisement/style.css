@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+div {
+    margin: 1em;
+}
+
+div > p {
+    padding: 1em;
+}
+
+ad {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    background-color:#4bcbf3;
+    
+    text-align: center;
+
+}
+
+ad img {
+    width: 25%;
+    align-content: center;
+}
+
+ad > p {
+    text-align: center;
+    margin: .3em;
+    font-weight: bold;
+    color: white;
+}
