@@ -1,3 +1,13 @@
-/* Build​ ​a​ ​page​ ​with​ ​an​ ​unordered​ ​list​ ​of​ ​soup​ ​ingredients, and​ ​an​ ​ordered​ ​list​ ​of​ ​steps​ ​to​ ​follow​ ​to cook​ ​soup​ ​with​ ​those​ ​ingredients.​ ​
-All​ ​descendants​ ​of​ ​the​ ​unordered​ ​list​ ​should​ ​have​ ​a​ ​bold​ ​font weight.​ ​All​ ​descendants​ ​of​ ​the​ ​ordered​ ​list​ ​should​ ​have​ ​a​ ​font​-variant​ ​of​ ​
+/* Build​ ​a​ ​page​ ​with​ ​an​ ​unordered​ ​list​ ​of​ ​soup​ ​ingredients, 
+and​ ​an​ ​ordered​ ​list​ ​of​ ​steps​ ​to​ ​follow​ ​to cook​ ​soup​ ​with​ ​those​ ​ingredients.​ ​
+All​ ​descendants​ ​of​ ​the​ ​unordered​ ​list​ ​should​ ​have​ ​a​ ​bold​ ​font weight.​ ​
+All​ ​descendants​ ​of​ ​the​ ​ordered​ ​list​ ​should​ ​have​ ​a​ ​font​-variant​ ​of​ ​
 small-caps. Save​ ​the​ ​files​ ​as​ ​soup-recipe.html​ ​and​ s​oup-recipe.css​. */
+
+ul > li {
+    font-weight: bold;
+}
+
+ol > li {
+    font-variant: small-caps;
+}
