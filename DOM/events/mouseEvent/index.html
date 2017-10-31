@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events 1</title>
+    <style type="text/css">
+    </style>
+
+</head>
+
+<body>
+
+    <form id="myForm">
+        Name:
+        <input type="text" id="name" minlength="3">
+
+        <!-- 
+        can use minlength="3" in input tag    
+        instead of minlength you can also use .value in the javascript
+        for example : var name = document.querySelector('#name').value;
+        if(name.length < 3) {
+            alert("name must be 3 or more characters"
+        )}-->
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <!-- <input type="button" value="click" id="btn"> -->
+
+    <script type="text/javascript">
+        var form = document.querySelector("myForm")
+        myForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var name = document.querySelector('#name').value;
+
+            if (name.length < 3) {
+                document.querySelector('#name').style.borderColor = "red";
+                alert("name must be 3 or more characters");
+            }
+
+        })
+
+
+        // var btn = document.querySelector('#btn')
+        // btn.addEventListener('click', function() {
+        //     alert('You clicked the button')
+        // })
+    </script>
+</body>
+
+</html>
