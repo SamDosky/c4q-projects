@@ -9,5 +9,5 @@ function swapList() {
     firstElem.innerText = secondElem.innerText;
     secondElem.innerText = temp;
 }
-ƒ
+
 swapList();
