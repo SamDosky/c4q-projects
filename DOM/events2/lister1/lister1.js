@@ -1,5 +1,5 @@
 function newList() {
-    var input =  document.querySelector("#text")
+    var input =  document.querySelector("#todoitem")
     if (input.value) {
         let list = document.querySelector("ul");
         let newItem = document.createElement("li");
@@ -17,15 +17,15 @@ listItems.addEventListener("click", function (event) {
         target.style.textDecoration = 
         target.style.textDecoration !== 'line-through' ? 'line-through' : 'none'
     }
-})
+});
 
-let submit = document.querySelector("#submit");
+let submit = document.querySelector("#additem");
 submit.addEventListener("click", function (event) {
     event.preventDefault();
     newList();
-})
+});
 
-let button = document.querySelector("#button");
+let button = document.querySelector("#removedone");
 button.addEventListener("click", function (event) {
     var listItems = document.querySelectorAll('li')
     var list = document.querySelector('ul')
@@ -34,10 +34,4 @@ button.addEventListener("click", function (event) {
             list.removeChild(listItems[i])
         }
     }
-})
-
-//create function list to add a list of items
-//click action on items, strickthrough or not
-//add text-decoration
-//manipulate the submit button, use preventDefault
-
+});
