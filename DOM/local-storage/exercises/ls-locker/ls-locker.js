@@ -1,7 +1,7 @@
 var blurKey = 'allTheBlurb';      
 
 var blurb = document.querySelector('#blurb');
-blurb.addEventListener('click', function (event) {
+blurb.addEventListener('text') , function (event) {
     window.localStorage.setItem(blurKey, event.target.value);
 });
 

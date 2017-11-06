@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="check-list.css">
-    <title>check-list</title>
+    <title>Check List</title>
+    <style type="text/css" rel="stylesheet">
+        #todos li {
+            background-color:aquamarine;
+        }
+    </style>
 </head>
+
 <body>
-    <ol></ol>
-    
+
+    <form>
+    <input type="text" name="text" id="text">
+    <input type="submit" value="Add Items" id="addnew">
+    </form>
+
+    <button id="removedone">Remove Completed Items</button>
+    <ul id="todos"></ul>
+    <script src="check-list.js"></script>
 </body>
-<script src="check-list.js"></script>
+
 </html>

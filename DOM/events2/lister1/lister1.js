@@ -13,7 +13,7 @@ var listItems = document.querySelector("ul");
 
 listItems.addEventListener("click", function (event) {
     let target = event.target
-    if (target.tagName.toUpperCase() == 'LI') {
+    if (target.tagName.toUpperCase() === 'LI') {
         target.style.textDecoration = 
         target.style.textDecoration !== 'line-through' ? 'line-through' : 'none'
     }

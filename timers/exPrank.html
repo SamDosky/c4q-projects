@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exPrank</title>
+</head>
+
+<body>
+
+    <form>
+        <input type="text" name="text" id="input">
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+
+    <p id="output"></p>
+
+    <script type="text/javascript">
+
+        var input = document.querySelector('#input')
+        var submit = document.querySelector('#submit')
+        var output = document.querySelector('#output')
+
+        function prank() {
+            output.innerText = 'JK, you typed: ' + input.value;
+            input.value = '';
+        }
+
+        submit.addEventListener('click', function (event) {
+            event.preventDefault();
+                output.innerText = "You typed: I hate Marshmellows!";
+                setTimeout(prank, 1000);
+        })
+    </script>
+
+</body>
+
+</html>
