@@ -1,0 +1,20 @@
+.container {
+    text-align: center;
+    /* display: block; */
+    background-color: goldenrod;
+    margin: 10% 25%;
+}
+
+h1 {
+    height: 74px;
+    padding-bottom: 1.5em; 
+}
+
+input {
+    width: 170px;
+    padding-left: .5em;
+}
+
+button:hover {
+    color: aquamarine;
+}

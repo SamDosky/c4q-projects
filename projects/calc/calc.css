@@ -4,13 +4,13 @@ body {
     background-color: aliceblue;
     font-size: 28px;
     line-height: 1.6em;
-    font-family: monospace;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #calc {
     width: 10em;
     margin: 0 auto;
-    background-color: pink;
+    background-color: rgba(0, 121, 96, 0.76);
     color: black;
     border: 2px solid black;
 }
@@ -19,18 +19,37 @@ body {
     height: 2em;
     border-bottom: 1px solid black;
     background-color: lightblue;
+    text-align: right;
+    padding-right: 1em;
 }
 
 .row {
     margin: 5px;
+    text-align: center;
 }
 
 .key {
     display: inline-block;
+    margin: 3%;
     padding: 1%;
-    width: 15%;
+    width: 17%;
     height: 25%;
-    background-color: black;
-    color: pink;
+    background-color: whitesmoke;
+    color: black;
     text-align: center;
+}
+
+.bigkey {
+    width: 35%;
+}
+
+.clearall {
+    clear:  both;
+}
+
+.memory {
+    float: right;
+    font-size: 50%;
+    color: white;
+    margin-right: 1em;
 }

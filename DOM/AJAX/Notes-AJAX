@@ -1,0 +1,12 @@
+Template to ADD JSON into JAVASCRIPT
+
+var grabJSONInfo = JSON.parse(this.responseText);
+
+var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", reqListener);
+    oReq.open("GET", "URL OF JSON");
+    oReq.send();
+
+
+
+----------------------
