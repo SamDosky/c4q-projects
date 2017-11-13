@@ -1,0 +1,25 @@
+from VAR to LET
+
+
+Temporal Dead Zone with LET
+
+
+from LET to CONST
+
+
+Arrow Functions
+
+//with old code function
+animals.map(funcion(animal) {
+    return animal.length;
+})
+
+// with the arrow function
+animals.map((animal) => {
+    return animal.length;
+})
+
+//with even more of a shortcut with the arrow Functions
+// omitting the function parenthesis and the curly braces
+// the arrow sets a function and it returns the output
+animal.map( animal => anmimal.length)
