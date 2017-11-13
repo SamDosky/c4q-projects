@@ -1,22 +1,12 @@
-//  1
-// const logAllElem = array =>
-//     array.forEach(elem => console.log(elem))
-//
-// logAllElem([1, 2, 3, 4])
+//1
 
+// option 1
+const logAllElem = array =>
+    array.forEach(elem => console.log(elem))
 
+logAllElem([5, 6, 7, 8]);
 
+// option 2
+let array = [1, 2, 3, 4]
 
-//  6
-
-//  7
-
-//  8
-
-//  9
-
-//  10
-
-//  11
-
-//  12
+array.forEach(elem => console.log(elem))
