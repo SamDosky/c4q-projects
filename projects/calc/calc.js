@@ -20,7 +20,6 @@ function calculate(mathExp) {
     }
 }
 
-
 /* 
 function setMemory(value) {
     window.localStorage.setItem('memory', value)
@@ -31,10 +30,7 @@ function setMemory(value) {
         memoryDiv.classList.add('hidden')
     }
 }
-
-
 */
-
 
 
 //var isResultShown = false;
@@ -73,11 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'mul':
             case 'div':
             case 'pct':
-                if (!doWeHaveAnOperator) {
-                    console.log("last" + outputDiv.innerText.slice(-1));
-                    outputDiv.innerText += document.getElementById(elementId).innerText
-                    doWeHaveAnOperator = true;
-                }
+               handleOperator(elementId);
                 break;
 
             default:
@@ -85,9 +77,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 doWeHaveAnOperator = false;
                 break;
         }
-
     })
 })
+
+// this function is in the global scope, so the other function can get it.
+function handleOperator (elementId) {
+    if (!doWeHaveAnOperator) {
+        console.log("last" + outputDiv.innerText.slice(-1));
+        outputDiv.innerText += document.getElementById(elementId).innerText
+        doWeHaveAnOperator = true;
+    }
+}
+
+
+
+
+
+
 
 /*
 
