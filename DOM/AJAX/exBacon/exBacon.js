@@ -1,3 +1,5 @@
+
+
 var addP = document.querySelector('#addP')
 addP.addEventListener('click', function (event) {
     function reqListener() {
@@ -8,9 +10,9 @@ addP.addEventListener('click', function (event) {
         paragraph.innerText = bacon
         document.body.appendChild(paragraph)
     }
-
     var oReq = new XMLHttpRequest();
     oReq.addEventListener("load", reqListener);
-    oReq.open("GET", "https://baconipsum.com/api/?type=all-meat&paras=2&start-with-lorem=1");
+    oReq.open("GET", "https://baconipsum.com/api/?type=all-meat&paras=2&start-with-lorem= 1");
     oReq.send();
 })
+

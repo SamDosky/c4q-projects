@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,11 +27,36 @@
 
 </html>
 
-<!-- <div class="container">
+<div class="container">
         <h1 class="header">Bitcoin in USD: 
             <br> $ <span id="output"></span></h1>
-        <input type="text" name="input" id="input">
+        <input type="number" name="input" id="input">
         <br>
         <button class="getprice">Convert to Bitcoin</button>
         <button id="toUSD">Convert to USD</button>
         </div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="bitcoin-price.css">
+    <title>bitcoin-price</title>
+</head>
+
+<body>
+
+    <h1 class="header">Bitcoin Conversion</h1>
+    <input type="number" value="" id="num">
+    <button id="btc2usd" class="convert">Convert to USD</button>
+    <button id="usd2btc" class="convert">Convert to Bitcoin</button>
+
+
+    <p class="history"></p>
+    <script src="bitcoin-price.js"></script>
+</body>
+
+</html>
